@@ -159,7 +159,7 @@ strong {
 
 .layout {
   display: grid;
-  grid-template-columns: 270px minmax(0, 1fr);
+  grid-template-columns: 285px minmax(0, 1fr);
   gap: 42px;
   max-width: 1280px;
   margin: 0 auto;
@@ -181,9 +181,9 @@ strong {
 }
 
 .author__avatar {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto 1em;
+  width: 176px;
+  height: 176px;
+  margin: 0 0 1em;
   border: 1px solid #f2f3f3;
   border-radius: 50%;
   object-fit: cover;
@@ -191,13 +191,15 @@ strong {
 }
 
 .author__content {
-  text-align: center;
+  text-align: left;
 }
 
 .author__name {
   margin-top: 0;
   margin-bottom: 0.2em;
-  font-size: 1.18em;
+  font-size: 1.26em;
+  line-height: 1.18;
+  overflow-wrap: anywhere;
 }
 
 .author__bio {
@@ -214,16 +216,30 @@ strong {
 }
 
 .author__urls li {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.78em;
   color: #494e52;
 }
 
-.label {
-  display: block;
-  color: #7a8288;
-  font-size: 0.82em;
-  font-weight: 700;
-  text-transform: uppercase;
+.icon-row {
+  display: grid;
+  grid-template-columns: 1.45em minmax(0, 1fr);
+  column-gap: 0.62em;
+  align-items: start;
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+.icon-row:hover,
+.icon-row:focus-visible {
+  color: #224b8d;
+}
+
+.icon-row__icon {
+  display: inline-flex;
+  justify-content: center;
+  min-width: 1.45em;
+  line-height: 1.45;
+  text-align: center;
 }
 
 .page {
@@ -241,6 +257,43 @@ strong {
 .page__content h1 {
   padding-top: 0.3em;
   border-bottom: 1px solid #f2f3f3;
+}
+
+.heading-icon,
+.subheading-icon {
+  display: inline-flex;
+  justify-content: center;
+  width: 1.45em;
+  margin-right: 0.18em;
+  line-height: 1;
+}
+
+.subheading-icon {
+  width: 1.35em;
+}
+
+.icon-list {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.icon-list li {
+  position: relative;
+  padding-left: 2em;
+  overflow-wrap: anywhere;
+}
+
+.icon-list li::before {
+  position: absolute;
+  top: 0.02em;
+  left: 0;
+  width: 1.45em;
+  text-align: center;
+  content: attr(data-icon);
+}
+
+.paper-points {
+  margin-top: 0.25em;
 }
 
 .anchor::before {
