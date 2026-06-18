@@ -1,21 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="jqz's academic homepage with research interests, selected work, publications, projects, CV, and contact links."
+      content="jqz is a master's student at Shenzhen University working on real-robot learning pipelines, LeRobot data tooling, Pi0.5 training, and remote inference systems."
     />
-    <meta name="theme-color" content="#f7f8fb" />
+    <meta name="theme-color" content="#f6f8fb" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="jqz | Academic Homepage" />
+    <meta property="og:title" content="jqz | Robotics & Learning Systems" />
     <meta
       property="og:description"
-      content="Research profile, publications, projects, CV, and contact links."
+      content="Academic homepage for jqz, Shenzhen University master's student focused on robot learning systems and real-robot engineering."
     />
-    <meta property="og:image" content="assets/profile-portrait.svg" />
-    <title>jqz | Academic Homepage</title>
+    <meta property="og:image" content="assets/jqz.png" />
+    <title>jqz | Robotics & Learning Systems</title>
     <link rel="canonical" href="https://jjjjqqqz101.github.io/" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
@@ -24,14 +24,23 @@
         "@type": "Person",
         "name": "jqz",
         "url": "https://jjjjqqqz101.github.io/",
-        "sameAs": [
-          "https://github.com/jjjjqqqz101",
-          "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-        ],
+        "email": "mailto:jjjjqqqzforwork@gmail.com",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Shenzhen University"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Shenzhen",
+          "addressCountry": "China"
+        },
+        "sameAs": ["https://github.com/jjjjqqqz101"],
         "knowsAbout": [
-          "Machine learning systems",
-          "Data-centric applications",
-          "Human-AI interaction"
+          "Robot learning",
+          "LeRobot",
+          "Real-robot data collection",
+          "Vision-language-action models",
+          "Remote inference systems"
         ]
       }
     </script>
@@ -40,11 +49,11 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="jqz academic homepage">jqz</a>
+      <a class="brand" href="#top" aria-label="jqz homepage">jqz</a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
+        <a href="#outputs">Outputs</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -58,33 +67,33 @@
         <section class="profile-card">
           <img
             class="avatar"
-            src="assets/profile-portrait.svg"
-            alt="Portrait placeholder for jqz"
+            src="assets/jqz.png"
+            alt="jqz portrait"
             width="220"
             height="220"
           />
           <div class="identity">
             <h1>jqz</h1>
-            <p>Researcher / Engineer</p>
+            <p>深圳大学 · 硕士研究生</p>
           </div>
           <dl class="profile-facts">
             <div>
               <dt>Affiliation</dt>
-              <dd>Your University or Lab</dd>
+              <dd>深圳大学（硕士研究生）</dd>
             </div>
             <div>
               <dt>Location</dt>
-              <dd>Shanghai, China</dd>
+              <dd>中国深圳</dd>
             </div>
             <div>
               <dt>Focus</dt>
-              <dd>ML systems, data tools, human-AI workflows</dd>
+              <dd>Robot learning, LeRobot, Pi0.5, remote inference</dd>
             </div>
           </dl>
           <div class="profile-links" aria-label="Profile links">
             <a href="mailto:jjjjqqqzforwork@gmail.com">Email</a>
             <a href="https://github.com/jjjjqqqz101">GitHub</a>
-            <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID">Scholar</a>
+            <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">Aloha Project</a>
             <a href="assets/resume-placeholder.txt">CV</a>
           </div>
         </section>
@@ -92,18 +101,18 @@
 
       <div class="content-column">
         <section class="intro-section" aria-labelledby="intro-title">
-          <p class="eyebrow">Academic Homepage</p>
-          <h2 id="intro-title">I build reliable research systems and data-driven tools.</h2>
+          <p class="eyebrow">Robotics · Learning Systems · Real-World Data</p>
+          <h2 id="intro-title">I build real-robot learning pipelines from data collection to deployment.</h2>
           <p class="lead">
-            I am interested in practical machine learning systems, data-centric applications, and
-            human-centered AI tools. My work connects careful engineering with empirical research:
-            turning ambiguous ideas into reproducible pipelines, usable interfaces, and measurable
-            results.
+            I am a master's student at Shenzhen University working on practical robot learning
+            systems. My current work focuses on Aloha-style teleoperation, LeRobot-format datasets,
+            Pi0.5 training, and distributed inference pipelines that connect research models with
+            real robot hardware.
           </p>
           <div class="status-row" aria-label="Current status">
-            <span>Open to research collaboration</span>
-            <span>Selected work below</span>
-            <span>CV available on request</span>
+            <span>深圳大学硕士研究生</span>
+            <span>Real-robot learning</span>
+            <span>Open-source engineering</span>
           </div>
         </section>
 
@@ -114,31 +123,35 @@
           </div>
           <div class="interest-grid">
             <article class="interest-card">
-              <h3>Machine Learning Systems</h3>
+              <span class="card-index">01</span>
+              <h3>Real-Robot Learning Systems</h3>
               <p>
-                Reproducible training, evaluation, model operations, and tooling that makes
-                experiments easier to trust.
+                End-to-end robot learning workflows that connect teleoperation, dataset collection,
+                policy training, remote inference, and closed-loop control.
               </p>
             </article>
             <article class="interest-card">
-              <h3>Data-Centric Applications</h3>
+              <span class="card-index">02</span>
+              <h3>LeRobot Data Pipelines</h3>
               <p>
-                Data cleaning, analysis workflows, visualization, and decision support for complex
-                real-world datasets.
+                Dataset recording, visualization, cleaning, merging, and release hygiene for
+                reproducible robot learning experiments.
               </p>
             </article>
             <article class="interest-card">
-              <h3>Human-AI Interaction</h3>
+              <span class="card-index">03</span>
+              <h3>Vision-Language-Action Policies</h3>
               <p>
-                Interfaces and workflows that help people inspect, steer, and collaborate with AI
-                systems.
+                Practical training and deployment templates for large VLA policies such as Pi0.5 on
+                real manipulation tasks.
               </p>
             </article>
             <article class="interest-card">
-              <h3>Applied Engineering</h3>
+              <span class="card-index">04</span>
+              <h3>Distributed Robot Inference</h3>
               <p>
-                Full-stack prototypes, automation, and maintainable infrastructure for research
-                ideas that need to become real products.
+                Split compute designs where robot hosts keep safety-critical IO local while GPU
+                servers run large policy inference.
               </p>
             </article>
           </div>
@@ -153,97 +166,34 @@
             <ol class="news-list">
               <li>
                 <time datetime="2026-06">Jun 2026</time>
-                <p>Launched this academic homepage for publications, projects, and professional updates.</p>
+                <p>
+                  Published the Aloha Pi0.5 LeRobot project, a real-robot learning pipeline for
+                  teleoperation, dataset tooling, training, and remote inference.
+                </p>
               </li>
               <li>
-                <time datetime="2026-05">May 2026</time>
-                <p>Add a real paper, project milestone, award, talk, or internship update here.</p>
+                <time datetime="2026-06">Jun 2026</time>
+                <p>Launched this GitHub Pages academic homepage at jjjjqqqz101.github.io.</p>
               </li>
               <li>
-                <time datetime="2026-04">Apr 2026</time>
-                <p>Use concise entries so visitors can scan recent work quickly.</p>
+                <time datetime="2026">2026</time>
+                <p>Continuing master's research at Shenzhen University in Shenzhen, China.</p>
               </li>
             </ol>
           </div>
           <div class="metrics-panel" aria-label="Research metrics">
             <span class="metric">
-              <strong>3</strong>
-              <span>Research themes</span>
+              <strong>1</strong>
+              <span>Public robotics project</span>
             </span>
             <span class="metric">
-              <strong>0+</strong>
-              <span>Replace with citations</span>
+              <strong>5</strong>
+              <span>Pipeline stages</span>
             </span>
             <span class="metric">
-              <strong>2026</strong>
-              <span>Last updated</span>
+              <strong>Python</strong>
+              <span>Primary language</span>
             </span>
-          </div>
-        </section>
-
-        <section id="publications" class="section" aria-labelledby="publications-title">
-          <div class="section-heading with-actions">
-            <div>
-              <p class="eyebrow">Publications</p>
-              <h2 id="publications-title">Selected Publications</h2>
-            </div>
-            <div class="filter-controls" aria-label="Publication filters">
-              <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">
-                All
-              </button>
-              <button type="button" class="filter-button" data-filter="paper" aria-pressed="false">
-                Papers
-              </button>
-              <button type="button" class="filter-button" data-filter="preprint" aria-pressed="false">
-                Preprints
-              </button>
-            </div>
-          </div>
-
-          <div class="publication-list">
-            <article class="publication-item" data-type="paper">
-              <div class="publication-year">2026</div>
-              <div class="publication-body">
-                <h3>Reliable Evaluation Pipelines for Data-Centric AI Systems</h3>
-                <p class="authors"><strong>jqz</strong>, Collaborator Name, Advisor Name</p>
-                <p>
-                  A structured evaluation workflow for comparing model behavior across changing
-                  datasets, annotation policies, and deployment constraints.
-                </p>
-                <div class="publication-meta">
-                  <span>Conference / Journal</span>
-                  <span>Selected paper</span>
-                  <span>Citations: <span class="citation-count" data-citations="0">0</span></span>
-                </div>
-                <div class="publication-links">
-                  <a href="#">Paper</a>
-                  <a href="#">Code</a>
-                  <a href="#">BibTeX</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="publication-item" data-type="preprint">
-              <div class="publication-year">2025</div>
-              <div class="publication-body">
-                <h3>Interactive Tools for Inspecting Human-AI Collaboration Workflows</h3>
-                <p class="authors"><strong>jqz</strong>, Collaborator Name</p>
-                <p>
-                  A prototype-driven study of interfaces that help users inspect AI suggestions,
-                  revise outputs, and track decision provenance.
-                </p>
-                <div class="publication-meta">
-                  <span>Preprint</span>
-                  <span>Under review</span>
-                  <span>Citations: <span class="citation-count" data-citations="0">0</span></span>
-                </div>
-                <div class="publication-links">
-                  <a href="#">Preprint</a>
-                  <a href="#">Demo</a>
-                  <a href="#">Slides</a>
-                </div>
-              </div>
-            </article>
           </div>
         </section>
 
@@ -252,35 +202,71 @@
             <p class="eyebrow">Projects</p>
             <h2 id="projects-title">Selected Projects</h2>
           </div>
-          <div class="project-grid">
-            <article class="project-card">
-              <span class="project-tag">Research Tool</span>
-              <h3>Experiment Tracking Cleanup Toolkit</h3>
+
+          <article class="featured-project">
+            <div class="featured-project-main">
+              <span class="project-tag">Featured · Robot Learning</span>
+              <h3>Aloha Pi0.5 LeRobot</h3>
               <p>
-                Utilities for keeping experiment artifacts organized, reducing manual cleanup, and
-                preserving useful run history.
+                A real-robot learning pipeline for AlohaMini teleoperation, LeRobot-format datasets,
+                A100 Pi0.5 training, and 4090-to-Orin remote closed-loop inference. The project
+                adapts LeRobot into a practical Aloha manipulation stack for demonstration
+                collection, dataset curation, model training, policy serving, and hardware-aware
+                control.
               </p>
-              <a href="https://github.com/jjjjqqqz101">View project</a>
+              <div class="project-links">
+                <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">GitHub Repository</a>
+                <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot#system-highlights">System Highlights</a>
+              </div>
+            </div>
+            <div class="project-pipeline" aria-label="Aloha project pipeline">
+              <span>AlohaMini Teleop</span>
+              <span>LeRobot Dataset</span>
+              <span>A100 Pi0.5 Training</span>
+              <span>4090 Inference</span>
+              <span>Orin Control</span>
+            </div>
+          </article>
+
+          <div class="project-grid compact-grid">
+            <article class="project-card">
+              <span class="project-tag">Engineering</span>
+              <h3>Dataset Cleaning & Release Hygiene</h3>
+              <p>
+                Scripts and templates for visualizing, cleaning, merging, and preparing real-robot
+                datasets without leaking private machine data.
+              </p>
+              <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">View in Aloha repo</a>
             </article>
             <article class="project-card">
-              <span class="project-tag">Web App</span>
-              <h3>Academic Profile Site</h3>
+              <span class="project-tag">Deployment</span>
+              <h3>Remote Policy Serving</h3>
               <p>
-                A GitHub Pages homepage inspired by AcadHomepage, optimized for a lightweight
-                static workflow and easy content updates.
+                A split-stack deployment path where the Orin robot host handles cameras, robot IO,
+                watchdogs, and safety checks while a 4090 server runs large-policy inference.
               </p>
-              <a href="https://github.com/jjjjqqqz101/jjjjqqqz101.github.io">
-                View source
-              </a>
+              <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">View deployment docs</a>
             </article>
-            <article class="project-card">
-              <span class="project-tag">Data</span>
-              <h3>Data Analysis Dashboard</h3>
-              <p>
-                Replace this with a real dashboard, model evaluation report, or open-source
-                analysis project.
-              </p>
-              <a href="https://github.com/jjjjqqqz101">View project</a>
+          </div>
+        </section>
+
+        <section id="outputs" class="section" aria-labelledby="outputs-title">
+          <div class="section-heading">
+            <p class="eyebrow">Outputs</p>
+            <h2 id="outputs-title">Publications & Technical Outputs</h2>
+          </div>
+          <div class="output-list">
+            <article class="output-item">
+              <time datetime="2026">2026</time>
+              <div>
+                <h3>Aloha Pi0.5 LeRobot: A Real-Robot Learning Pipeline</h3>
+                <p>
+                  Open-source engineering report and implementation covering teleoperation, data
+                  collection, dataset curation, Pi0.5 training, remote inference, and Orin-side
+                  closed-loop control.
+                </p>
+                <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">Read the project</a>
+              </div>
             </article>
           </div>
         </section>
@@ -294,36 +280,35 @@
             <li>
               <time datetime="2026">2026</time>
               <div>
-                <h3>Research / Engineering Role</h3>
-                <p>Your lab, university, company, or independent research focus.</p>
+                <h3>Master's Student, Shenzhen University</h3>
+                <p>深圳大学硕士研究生，所在地：中国深圳。</p>
               </div>
             </li>
             <li>
-              <time datetime="2025">2025</time>
+              <time datetime="2026">2026</time>
               <div>
-                <h3>Selected Project or Internship</h3>
-                <p>Summarize the problem, your contribution, and the outcome in one sentence.</p>
-              </div>
-            </li>
-            <li>
-              <time datetime="2024">2024</time>
-              <div>
-                <h3>Education</h3>
-                <p>Degree program, major, university, advisor, or relevant coursework.</p>
+                <h3>Aloha Pi0.5 LeRobot Project</h3>
+                <p>
+                  Built and documented a real-robot learning stack for Aloha teleoperation,
+                  LeRobot datasets, Pi0.5 training, and remote inference.
+                </p>
               </div>
             </li>
           </ol>
         </section>
 
-        <section class="section" aria-labelledby="service-title">
+        <section class="section" aria-labelledby="stack-title">
           <div class="section-heading">
-            <p class="eyebrow">Service</p>
-            <h2 id="service-title">Academic Service & Talks</h2>
+            <p class="eyebrow">Stack</p>
+            <h2 id="stack-title">Technical Stack</h2>
           </div>
-          <ul class="service-list">
-            <li>Talk: Add conference, seminar, reading group, or invited presentation details.</li>
-            <li>Service: Add reviewing, teaching assistantship, mentoring, or community work.</li>
-            <li>Awards: Add scholarship, competition, grant, or recognition.</li>
+          <ul class="stack-grid">
+            <li>Python</li>
+            <li>Shell</li>
+            <li>LeRobot</li>
+            <li>Pi0.5</li>
+            <li>AlohaMini / AlohaPro</li>
+            <li>A100 / RTX 4090 / Orin</li>
           </ul>
         </section>
 
@@ -333,14 +318,13 @@
             <h2 id="contact-title">Get in Touch</h2>
           </div>
           <p>
-            I am happy to discuss research collaboration, open-source work, internships, and
-            engineering opportunities related to machine learning systems and data tools.
+            I am happy to discuss robot learning systems, real-robot data pipelines, LeRobot
+            engineering, and research collaboration.
           </p>
           <div class="contact-links">
             <a href="mailto:jjjjqqqzforwork@gmail.com">jjjjqqqzforwork@gmail.com</a>
             <a href="https://github.com/jjjjqqqz101">GitHub</a>
-            <a href="https://www.linkedin.com/in/your-linkedin">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID">Google Scholar</a>
+            <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">Aloha Project</a>
           </div>
         </section>
       </div>
