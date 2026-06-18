@@ -80,6 +80,11 @@ strong {
   color: #30363a;
 }
 
+.job-notice {
+  color: #d00000;
+  font-weight: 700;
+}
+
 .skip-link {
   position: absolute;
   top: 8px;
