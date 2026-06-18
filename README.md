@@ -2,10 +2,11 @@
 
 This repository powers [https://jjjjqqqz101.github.io/](https://jjjjqqqz101.github.io/),
 an academic homepage for jqz (Zhang Jinquan), a master's student at Shenzhen
-University. The site is inspired by
-[AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io), but it is
-implemented as a lightweight static GitHub Pages site: no Ruby, Jekyll, build
-step, or package manager is required.
+University. The current layout follows the academic homepage style of
+[liuhankai.github.io](https://liuhankai.github.io/): sticky top navigation,
+left profile sidebar, and paper-box publication entries. It remains a
+lightweight static GitHub Pages site: no Ruby, Jekyll, build step, or package
+manager is required.
 
 ## Current Content
 
@@ -14,17 +15,17 @@ step, or package manager is required.
 - Research interests in robot learning, VLA, WAM, post-training, and fine-tuning
 - IROS 2026 accepted paper project: Structure-Aware Robust Fine-Tuning
 - Aloha Pi0.5 LeRobot featured project
-- Technical outputs, experience, and stack summary
+- AcademicPages-style news, selected publications, selected projects, and experiences
 - SEO metadata and JSON-LD person schema
-- Light/dark theme toggle
 
 ## Files
 
 - `index.html`: page content and metadata
-- `styles.css`: responsive academic homepage styling
-- `script.js`: current year and color theme toggle
+- `styles.css`: responsive AcademicPages-style homepage styling
+- `script.js`: current year rendering
 - `assets/jqz.png`: profile photo
 - `assets/sarf-fig2.png`: rendered figure for the IROS 2026 paper project
+- `assets/aloha.png`: Aloha Pi0.5 LeRobot project image
 - `assets/resume-placeholder.txt`: replace with a real CV or resume when ready
 - `.nojekyll`: tells GitHub Pages to serve files as-is
 

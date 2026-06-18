@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="jqz (Zhang Jinquan) is a master's student at Shenzhen University working on robot learning, VLA robots, world action models, post-training, and fine-tuning."
+      content="Academic homepage for jqz (Zhang Jinquan), master's student at Shenzhen University. Research interests include robot learning, VLA, WAM, post-training, and fine-tuning."
     />
-    <meta name="theme-color" content="#f6f8fb" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="jqz (Zhang Jinquan) | Robot Learning" />
+    <meta property="og:title" content="jqz (Zhang Jinquan) - Homepage" />
     <meta
       property="og:description"
-      content="Academic homepage for jqz (Zhang Jinquan), Shenzhen University master's student focused on robot learning, VLA, WAM, post-training, and fine-tuning."
+      content="Robot learning, VLA, WAM, post-training, fine-tuning, robust VLA policies, and real-robot systems."
     />
     <meta property="og:image" content="assets/jqz.png" />
-    <title>jqz (Zhang Jinquan) | Robot Learning</title>
+    <meta name="theme-color" content="#ffffff" />
+    <title>jqz (Zhang Jinquan) - Homepage</title>
     <link rel="canonical" href="https://jjjjqqqz101.github.io/" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
@@ -49,357 +49,198 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="jqz homepage">jqz</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#outputs">Outputs</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle color theme">
-        <span aria-hidden="true">◐</span>
-      </button>
+    <header class="masthead">
+      <div class="masthead__inner-wrap">
+        <nav class="greedy-nav" aria-label="Primary navigation">
+          <a class="masthead__menu-item masthead__menu-item--lg" href="#about-me">Homepage</a>
+          <a class="masthead__menu-item" href="#about-me">About Me</a>
+          <a class="masthead__menu-item" href="#news">News</a>
+          <a class="masthead__menu-item" href="#selected-publications">Selected Publications</a>
+          <a class="masthead__menu-item" href="#selected-projects">Selected Projects</a>
+          <a class="masthead__menu-item" href="#experiences">Experiences</a>
+          <a class="masthead__menu-item" href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="main" class="page-shell">
-      <aside id="top" class="profile-column" aria-label="Profile summary">
-        <section class="profile-card">
+    <main id="main" class="layout" role="main">
+      <aside class="sidebar sticky" aria-label="Profile summary">
+        <section class="profile-box" itemscope itemtype="https://schema.org/Person">
           <img
-            class="avatar"
+            class="author__avatar"
             src="assets/jqz.png"
-            alt="jqz (Zhang Jinquan) portrait"
+            alt="jqz (Zhang Jinquan)"
             width="220"
             height="220"
           />
-          <div class="identity">
-            <h1>jqz</h1>
-            <p>Zhang Jinquan</p>
+          <div class="author__content">
+            <h1 class="author__name" itemprop="name">jqz (Zhang Jinquan)</h1>
+            <p class="author__bio">M.S. Student, Shenzhen University</p>
           </div>
-          <dl class="profile-facts">
-            <div>
-              <dt>Affiliation</dt>
-              <dd>Shenzhen University, M.S. Student</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>Shenzhen, China</dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>Robot learning, VLA, WAM, post-training, fine-tuning</dd>
-            </div>
-          </dl>
-          <div class="profile-links" aria-label="Profile links">
-            <a href="mailto:jjjjqqqzforwork@gmail.com">Email</a>
-            <a href="https://github.com/jjjjqqqz101">GitHub</a>
-            <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">Aloha Project</a>
-            <a href="assets/resume-placeholder.txt">CV</a>
-          </div>
+          <ul class="author__urls">
+            <li><span class="label">University</span> Shenzhen University</li>
+            <li><span class="label">Location</span> Shenzhen, China</li>
+            <li><span class="label">Email</span> jjjjqqqzforwork [at] gmail.com</li>
+            <li><a href="https://github.com/jjjjqqqz101">GitHub</a></li>
+            <li><a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">Aloha Pi0.5 LeRobot</a></li>
+            <li><a href="assets/resume-placeholder.txt">CV</a></li>
+          </ul>
         </section>
       </aside>
 
-      <div class="content-column">
-        <section class="intro-section" aria-labelledby="intro-title">
-          <p class="eyebrow">Robot Learning · VLA · WAM · Post-Training · Fine-Tuning</p>
-          <h2 id="intro-title">I study robust robot learning systems for real-world manipulation.</h2>
-          <p class="lead">
-            I am a master's student at Shenzhen University. My research focuses on robot learning,
-            Vision-Language-Action (VLA) robots, World Action Models (WAM), post-training, and
-            fine-tuning methods that make embodied policies more capable, robust, and deployable.
-          </p>
-          <div class="status-row" aria-label="Current status">
-            <span>Shenzhen University M.S. Student</span>
-            <span>IROS 2026 Accepted Paper</span>
-            <span>Robust VLA Policies</span>
-          </div>
-        </section>
+      <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            <span class="anchor" id="about-me"></span>
+            <h1>About Me</h1>
+            <p>
+              I am <strong>jqz (Zhang Jinquan)</strong>, a master's student at
+              <strong>Shenzhen University</strong>, China. My research focuses on
+              <strong>robot learning</strong>, <strong>Vision-Language-Action (VLA)</strong>
+              robots, <strong>World Action Models (WAM)</strong>, <strong>post-training</strong>,
+              and <strong>fine-tuning</strong> methods for embodied intelligence.
+            </p>
+            <p>
+              I am particularly interested in making generalist robot policies more robust under
+              physical-world conditions, and in building real-robot pipelines that connect
+              teleoperation, dataset curation, policy training, remote inference, and closed-loop
+              deployment.
+            </p>
 
-        <section id="research" class="section" aria-labelledby="research-title">
-          <div class="section-heading">
-            <p class="eyebrow">Research</p>
-            <h2 id="research-title">Research Interests</h2>
-          </div>
-          <div class="interest-grid">
-            <article class="interest-card">
-              <span class="card-index">01</span>
-              <h3>Robot Learning</h3>
-              <p>
-                Learning-based manipulation systems that connect perception, language, action, data
-                collection, policy training, and real-robot deployment.
-              </p>
-            </article>
-            <article class="interest-card">
-              <span class="card-index">02</span>
-              <h3>VLA: Vision-Language-Action</h3>
-              <p>
-                Generalist embodied policies that map visual observations and language instructions
-                into robot actions, with an emphasis on safety and robustness.
-              </p>
-            </article>
-            <article class="interest-card">
-              <span class="card-index">03</span>
-              <h3>WAM: World Action Model</h3>
-              <p>
-                Action-aware world modeling for embodied agents, including structure, dynamics,
-                policy grounding, and interaction-aware prediction.
-              </p>
-            </article>
-            <article class="interest-card">
-              <span class="card-index">04</span>
-              <h3>Post-Training</h3>
-              <p>
-                Methods that adapt pretrained robot policies after foundation training, improving
-                task performance, robustness, and real-world alignment.
-              </p>
-            </article>
-            <article class="interest-card">
-              <span class="card-index">05</span>
-              <h3>Fine-Tuning</h3>
-              <p>
-                Parameter-efficient and structure-aware fine-tuning for embodied models, including
-                visual encoders, policy-critical attention, and language-guided constraints.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section split-section" aria-labelledby="news-title">
-          <div>
-            <div class="section-heading">
-              <p class="eyebrow">News</p>
-              <h2 id="news-title">Recent Updates</h2>
-            </div>
-            <ol class="news-list">
+            <span class="anchor" id="news"></span>
+            <h1>News</h1>
+            <ul>
               <li>
-                <time datetime="2026">2026</time>
-                <p>
-                  Paper accepted to IROS 2026: "Structure-Aware Robust Fine-Tuning: Defending
-                  Vision-Language-Action Robots Against Physical Attention Hijacking."
-                </p>
+                <em>2026</em>: Our paper
+                <strong>Structure-Aware Robust Fine-Tuning: Defending Vision-Language-Action Robots
+                Against Physical Attention Hijacking</strong>
+                was accepted by IROS 2026.
               </li>
               <li>
-                <time datetime="2026-06">Jun 2026</time>
-                <p>
-                  Published the Aloha Pi0.5 LeRobot project, a real-robot learning pipeline for
-                  teleoperation, dataset tooling, training, and remote inference.
-                </p>
+                <em>2026.06</em>: Released
+                <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">Aloha Pi0.5 LeRobot</a>,
+                a real-robot learning pipeline for teleoperation, LeRobot datasets, Pi0.5 training,
+                and remote inference.
               </li>
               <li>
-                <time datetime="2026">2026</time>
-                <p>Continuing master's research at Shenzhen University in Shenzhen, China.</p>
+                <em>2026</em>: Continuing master's research at Shenzhen University in Shenzhen,
+                China.
               </li>
-            </ol>
-          </div>
-          <div class="metrics-panel" aria-label="Research metrics">
-            <span class="metric">
-              <strong>IROS</strong>
-              <span>2026 accepted paper</span>
-            </span>
-            <span class="metric">
-              <strong>VLA</strong>
-              <span>Robust robot policies</span>
-            </span>
-            <span class="metric">
-              <strong>1</strong>
-              <span>Public robotics project</span>
-            </span>
-          </div>
-        </section>
+            </ul>
 
-        <section id="projects" class="section" aria-labelledby="projects-title">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2 id="projects-title">Selected Projects</h2>
-          </div>
-
-          <article class="paper-project">
-            <div class="paper-copy">
-              <span class="project-tag">IROS 2026 · Accepted</span>
-              <h3>Structure-Aware Robust Fine-Tuning</h3>
-              <p class="paper-title">
-                Defending Vision-Language-Action Robots Against Physical Attention Hijacking
-              </p>
-              <p>
-                This project studies physical-world robustness for VLA robot policies. It identifies
-                a mechanism called policy-critical action-to-vision attention hijacking, where a
-                printable adversarial patch diverts action-conditioned attention away from
-                task-relevant regions and causes manipulation failures.
-              </p>
-              <ul class="key-points">
-                <li>
-                  <strong>Attack:</strong> Attention-Guided Semantic Disruption (AGSD), an
-                  EOT-optimized printable patch that hijacks policy-critical attention and disrupts
-                  vision-language semantic alignment.
-                </li>
-                <li>
-                  <strong>Defense:</strong> Structure-Aware Robust Fine-Tuning (SARF), a
-                  zero-inference-overhead defense that fine-tunes only the visual encoder.
-                </li>
-                <li>
-                  <strong>Result:</strong> SARF reduces OpenVLA failure under AGSD from 100% to
-                  17.0-56.8% on LIBERO suites and improves real PiPER success from 9.7% to 61.7%.
-                </li>
-              </ul>
-              <div class="result-strip" aria-label="SARF project results">
-                <span>AGSD physical patch</span>
-                <span>Policy-critical attention correction</span>
-                <span>Visual-encoder-only fine-tuning</span>
-                <span>Zero inference overhead</span>
+            <span class="anchor" id="selected-publications"></span>
+            <h1>Selected Publications</h1>
+            <h2>Robot Learning and VLA Robustness</h2>
+            <div class="paper-box">
+              <div class="paper-box-image">
+                <div>
+                  <div class="badge">IROS 2026</div>
+                  <img
+                    src="assets/sarf-fig2.png"
+                    alt="SARF paper overview figure"
+                    width="100%"
+                  />
+                </div>
+              </div>
+              <div class="paper-box-text">
+                <p>
+                  <strong>Structure-Aware Robust Fine-Tuning: Defending Vision-Language-Action
+                  Robots Against Physical Attention Hijacking</strong>
+                </p>
+                <p><strong>jqz (Zhang Jinquan)</strong> <em>et al.</em></p>
+                <ul>
+                  <li>
+                    Identifies policy-critical action-to-vision attention hijacking, where physical
+                    adversarial patches divert action-conditioned attention away from task-relevant
+                    regions.
+                  </li>
+                  <li>
+                    Proposes AGSD, an EOT-optimized printable patch that jointly hijacks
+                    policy-critical attention and disrupts vision-language semantic alignment.
+                  </li>
+                  <li>
+                    Introduces SARF, a zero-inference-overhead defense that fine-tunes only the
+                    visual encoder using feature anchoring, attention correction, and
+                    language-guided geometric consistency.
+                  </li>
+                  <li>
+                    Reduces OpenVLA failure under AGSD from 100% to 17.0-56.8% on LIBERO and
+                    improves real PiPER success from 9.7% to 61.7%.
+                  </li>
+                </ul>
               </div>
             </div>
-            <figure class="paper-figure">
-              <img
-                src="assets/sarf-fig2.png"
-                alt="Figure overview of AGSD attack and SARF defense for VLA robots"
-                width="2187"
-                height="1350"
-              />
-              <figcaption>
-                AGSD exposes physical attention hijacking in VLA robots; SARF corrects
-                policy-critical attention with structure-aware robust fine-tuning.
-              </figcaption>
-            </figure>
-          </article>
 
-          <article class="featured-project">
-            <div class="featured-project-main">
-              <span class="project-tag">Open Source · Robot Learning</span>
-              <h3>Aloha Pi0.5 LeRobot</h3>
-              <p>
-                A real-robot learning pipeline for AlohaMini teleoperation, LeRobot-format datasets,
-                A100 Pi0.5 training, and 4090-to-Orin remote closed-loop inference. The project
-                adapts LeRobot into a practical Aloha manipulation stack for demonstration
-                collection, dataset curation, model training, policy serving, and hardware-aware
-                control.
-              </p>
-              <div class="project-links">
-                <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">GitHub Repository</a>
-                <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot#system-highlights">System Highlights</a>
+            <span class="anchor" id="selected-projects"></span>
+            <h1>Selected Projects</h1>
+            <h2>Real-Robot Learning Systems</h2>
+            <div class="paper-box">
+              <div class="paper-box-image">
+                <div>
+                  <div class="badge">Project 2026</div>
+                  <img
+                    src="assets/aloha.png"
+                    alt="Aloha Pi0.5 LeRobot project overview"
+                    width="100%"
+                  />
+                </div>
+              </div>
+              <div class="paper-box-text">
+                <p>
+                  <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">
+                    Aloha Pi0.5 LeRobot: A Real-Robot Learning Pipeline
+                  </a>
+                </p>
+                <p><strong>jqz (Zhang Jinquan)</strong></p>
+                <ul>
+                  <li>
+                    Builds an end-to-end pipeline for AlohaMini teleoperation, LeRobot-format
+                    datasets, dataset cleaning, Pi0.5 training, and 4090-to-Orin remote inference.
+                  </li>
+                  <li>
+                    Separates real-time robot IO and safety on Orin from heavy VLA policy inference
+                    on a remote GPU server.
+                  </li>
+                  <li>
+                    Provides public engineering documentation for reproducible real-robot learning
+                    without exposing private datasets, paths, IPs, or hardware identifiers.
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="project-pipeline" aria-label="Aloha project pipeline">
-              <span>AlohaMini Teleop</span>
-              <span>LeRobot Dataset</span>
-              <span>A100 Pi0.5 Training</span>
-              <span>4090 Inference</span>
-              <span>Orin Control</span>
-            </div>
-          </article>
-        </section>
 
-        <section id="outputs" class="section" aria-labelledby="outputs-title">
-          <div class="section-heading">
-            <p class="eyebrow">Outputs</p>
-            <h2 id="outputs-title">Publications & Technical Outputs</h2>
-          </div>
-          <div class="output-list">
-            <article class="output-item">
-              <time datetime="2026">2026</time>
-              <div>
-                <h3>
-                  Structure-Aware Robust Fine-Tuning: Defending Vision-Language-Action Robots
-                  Against Physical Attention Hijacking
-                </h3>
-                <p>IROS 2026, accepted.</p>
-                <p>
-                  Introduces AGSD, a printable physical patch attack for VLA policies, and SARF, a
-                  visual-encoder-only robust fine-tuning defense that improves mechanism-level
-                  robustness without inference overhead.
-                </p>
-              </div>
-            </article>
-            <article class="output-item">
-              <time datetime="2026">2026</time>
-              <div>
-                <h3>Aloha Pi0.5 LeRobot: A Real-Robot Learning Pipeline</h3>
-                <p>
-                  Open-source engineering report and implementation covering teleoperation, data
-                  collection, dataset curation, Pi0.5 training, remote inference, and Orin-side
-                  closed-loop control.
-                </p>
-                <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">Read the project</a>
-              </div>
-            </article>
-          </div>
-        </section>
+            <span class="anchor" id="research-interests"></span>
+            <h1>Research Interests</h1>
+            <ul>
+              <li><strong>Robot Learning</strong>: data-driven manipulation, real-robot systems, and closed-loop deployment.</li>
+              <li><strong>VLA</strong>: Vision-Language-Action policies for general robotic manipulation.</li>
+              <li><strong>WAM</strong>: World Action Models for action-aware embodied prediction and planning.</li>
+              <li><strong>Post-Training</strong>: adapting pretrained robot policies for downstream tasks and robustness.</li>
+              <li><strong>Fine-Tuning</strong>: structure-aware and parameter-efficient adaptation for embodied models.</li>
+            </ul>
 
-        <section id="experience" class="section" aria-labelledby="experience-title">
-          <div class="section-heading">
-            <p class="eyebrow">CV</p>
-            <h2 id="experience-title">Experience & Education</h2>
-          </div>
-          <ol class="timeline">
-            <li>
-              <time datetime="2026">2026</time>
-              <div>
-                <h3>Master's Student, Shenzhen University</h3>
-                <p>Based in Shenzhen, China. Research focus: robot learning and robust VLA systems.</p>
-              </div>
-            </li>
-            <li>
-              <time datetime="2026">2026</time>
-              <div>
-                <h3>IROS 2026 Accepted Paper</h3>
-                <p>
-                  Structure-aware robust fine-tuning for defending VLA robots against physical
-                  attention hijacking.
-                </p>
-              </div>
-            </li>
-            <li>
-              <time datetime="2026">2026</time>
-              <div>
-                <h3>Aloha Pi0.5 LeRobot Project</h3>
-                <p>
-                  Built and documented a real-robot learning stack for Aloha teleoperation,
-                  LeRobot datasets, Pi0.5 training, and remote inference.
-                </p>
-              </div>
-            </li>
-          </ol>
-        </section>
+            <span class="anchor" id="experiences"></span>
+            <h1>Experiences</h1>
+            <ul>
+              <li><em>2026 - Now</em>, M.S. Student, Shenzhen University, Shenzhen, China.</li>
+              <li><em>2026</em>, IROS 2026 accepted paper on robust fine-tuning for VLA robots.</li>
+              <li><em>2026</em>, Aloha Pi0.5 LeRobot open-source real-robot learning project.</li>
+            </ul>
 
-        <section class="section" aria-labelledby="stack-title">
-          <div class="section-heading">
-            <p class="eyebrow">Stack</p>
-            <h2 id="stack-title">Technical Stack</h2>
-          </div>
-          <ul class="stack-grid">
-            <li>Robot Learning</li>
-            <li>VLA</li>
-            <li>WAM</li>
-            <li>Post-Training</li>
-            <li>Fine-Tuning</li>
-            <li>LeRobot</li>
-            <li>OpenVLA</li>
-            <li>LIBERO</li>
-            <li>PiPER</li>
-          </ul>
-        </section>
-
-        <section id="contact" class="section contact-section" aria-labelledby="contact-title">
-          <div class="section-heading">
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Get in Touch</h2>
-          </div>
-          <p>
-            I am happy to discuss robot learning, VLA/WAM research, robust fine-tuning,
-            post-training, real-robot data pipelines, and research collaboration.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:jjjjqqqzforwork@gmail.com">jjjjqqqzforwork@gmail.com</a>
-            <a href="https://github.com/jjjjqqqz101">GitHub</a>
-            <a href="https://github.com/jjjjqqqz101/aloha-pi05-lerobot">Aloha Project</a>
-          </div>
-        </section>
-      </div>
+            <span class="anchor" id="contact"></span>
+            <h1>Contact</h1>
+            <ul>
+              <li>Email: jjjjqqqzforwork [at] gmail.com</li>
+              <li>GitHub: <a href="https://github.com/jjjjqqqz101">https://github.com/jjjjqqqz101</a></li>
+              <li>Homepage: <a href="https://jjjjqqqz101.github.io/">https://jjjjqqqz101.github.io/</a></li>
+            </ul>
+          </section>
+        </div>
+      </article>
     </main>
 
     <footer class="site-footer">
       <span>© <span id="year"></span> jqz (Zhang Jinquan)</span>
-      <a href="#top">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
