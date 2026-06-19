@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#ffffff" />
     <title>Zhang Jinquan(张锦权) - Homepage</title>
     <link rel="canonical" href="https://jjjjqqqz101.github.io/" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260619-carousel" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -338,75 +338,97 @@
             <span class="anchor" id="experiences"></span>
             <h1><span class="heading-icon" aria-hidden="true">💼</span>Experiences</h1>
             <h2><span class="subheading-icon" aria-hidden="true">🎥</span>Demo Videos</h2>
-            <div class="video-showcase">
-              <div class="video-frame">
-                <video controls playsinline preload="metadata" poster="assets/io-demo1-poster.png">
-                  <source src="assets/io-demo1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="video-caption">
-                <p><strong>FingerEye-Based Dexterous Manipulation Demo</strong></p>
-                <ul class="icon-list">
-                  <li data-icon="🧠">
-                    This work builds on Roboscience's <strong>FingerEye</strong> model, with our own
-                    algorithmic improvements for real-robot deployment.
-                  </li>
-                  <li data-icon="🔁">
-                    During post-training, we found that mixing successful model-inference data with
-                    human teleoperation data works better than training only on manually collected
-                    teleoperation data.
-                  </li>
-                  <li data-icon="🏗️">
-                    Based on this finding, we designed an automated architecture for collecting
-                    successful datasets from the model inference stage.
-                  </li>
-                  <li data-icon="⭐">
-                    We combine human scoring with scoring from the Qwen vision-language model,
-                    producing thousands of high-quality real-robot post-training samples.
-                  </li>
-                  <li data-icon="📈">
-                    Compared with training on pure human teleoperation data, the mixed-data setting
-                    improved real-robot inference success by nearly <strong>30%</strong>, validating
-                    our hypothesis.
-                  </li>
-                  <li data-icon="🚀">
-                    We are accelerating the write-up of this work and hope to share it on arXiv and
-                    at ICRA 2027 for discussion on stable and robust real-robot deployment.
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <div class="demo-carousel" data-carousel>
+              <button
+                class="demo-carousel__button demo-carousel__button--prev"
+                type="button"
+                aria-label="Previous demo"
+                data-carousel-prev
+              >
+                ‹
+              </button>
+              <div class="demo-carousel__viewport">
+                <div class="demo-carousel__track" data-carousel-track>
+                  <div class="video-showcase" data-carousel-slide>
+                    <div class="video-frame">
+                      <video controls playsinline preload="metadata" poster="assets/io-demo1-poster.png">
+                        <source src="assets/io-demo1.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="video-caption">
+                      <p><strong>FingerEye-Based Dexterous Manipulation Demo</strong></p>
+                      <ul class="icon-list">
+                        <li data-icon="🧠">
+                          This work builds on Roboscience's <strong>FingerEye</strong> model, with
+                          our own algorithmic improvements for real-robot deployment.
+                        </li>
+                        <li data-icon="🔁">
+                          During post-training, we found that mixing successful model-inference data
+                          with human teleoperation data works better than training only on manually
+                          collected teleoperation data.
+                        </li>
+                        <li data-icon="🏗️">
+                          Based on this finding, we designed an automated architecture for collecting
+                          successful datasets from the model inference stage.
+                        </li>
+                        <li data-icon="⭐">
+                          We combine human scoring with scoring from the Qwen vision-language model,
+                          producing thousands of high-quality real-robot post-training samples.
+                        </li>
+                        <li data-icon="📈">
+                          Compared with training on pure human teleoperation data, the mixed-data
+                          setting improved real-robot inference success by nearly
+                          <strong>30%</strong>, validating our hypothesis.
+                        </li>
+                        <li data-icon="🚀">
+                          We are accelerating the write-up of this work and hope to share it on arXiv
+                          and at ICRA 2027 for discussion on stable and robust real-robot deployment.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
-            <div class="video-showcase">
-              <div class="video-frame">
-                <video controls playsinline preload="metadata" poster="assets/io-demo2-poster.png">
-                  <source src="assets/io-demo2.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                  <div class="video-showcase" data-carousel-slide>
+                    <div class="video-frame">
+                      <video controls playsinline preload="metadata" poster="assets/io-demo2-poster.png">
+                        <source src="assets/io-demo2.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="video-caption">
+                      <p><strong>Unified Pi0.5 LoRA Demo on the Songling PIPER Manipulator</strong></p>
+                      <ul class="icon-list">
+                        <li data-icon="🤖">
+                          This demo shows the same Pi0.5 policy after real-robot LoRA fine-tuning on
+                          the Songling PIPER manipulator.
+                        </li>
+                        <li data-icon="🧩">
+                          All three tasks are completed by a single checkpoint, highlighting
+                          cross-task consistency instead of task-specific model switching.
+                        </li>
+                        <li data-icon="🌊">
+                          We smooth both model outputs and arm execution, because real-world robots
+                          should be measured not only by task success, but also by the fluidity and
+                          stability of their motions.
+                        </li>
+                        <li data-icon="🏠">
+                          Our broader goal is to move beyond lab-only demonstrations and build robots
+                          that can operate gracefully in everyday human environments.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="video-caption">
-                <p><strong>Unified Pi0.5 LoRA Demo on the Songling PIPER Manipulator</strong></p>
-                <ul class="icon-list">
-                  <li data-icon="🤖">
-                    This demo shows the same Pi0.5 policy after real-robot LoRA fine-tuning on the
-                    Songling PIPER manipulator.
-                  </li>
-                  <li data-icon="🧩">
-                    All three tasks are completed by a single checkpoint, highlighting cross-task
-                    consistency instead of task-specific model switching.
-                  </li>
-                  <li data-icon="🌊">
-                    We smooth both model outputs and arm execution, because real-world robots should
-                    be measured not only by task success, but also by the fluidity and stability of
-                    their motions.
-                  </li>
-                  <li data-icon="🏠">
-                    Our broader goal is to move beyond lab-only demonstrations and build robots that
-                    can operate gracefully in everyday human environments.
-                  </li>
-                </ul>
-              </div>
+              <button
+                class="demo-carousel__button demo-carousel__button--next"
+                type="button"
+                aria-label="Next demo"
+                data-carousel-next
+              >
+                ›
+              </button>
             </div>
 
             <span class="anchor" id="contact"></span>
@@ -425,6 +447,6 @@
       <span>© <span id="year"></span> Zhang Jinquan(张锦权)</span>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260619-carousel"></script>
   </body>
 </html>
