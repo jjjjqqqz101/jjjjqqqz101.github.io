@@ -157,6 +157,12 @@ strong {
   font-weight: 700;
 }
 
+.masthead-language-switcher.language-switcher__controls {
+  flex: 0 0 auto;
+  width: 6.5rem;
+  margin-left: 0.6rem;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 285px minmax(0, 1fr);
