@@ -419,6 +419,45 @@
                       </ul>
                     </div>
                   </div>
+
+                  <div class="video-showcase" data-carousel-slide>
+                    <div class="video-frame">
+                      <video controls playsinline preload="metadata" poster="assets/io-demo3-poster.png">
+                        <source src="assets/io-demo3.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="video-caption">
+                      <p><strong>Qwen + Flow-Matching VLA Generalization Demo</strong></p>
+                      <ul class="icon-list">
+                        <li data-icon="🧠">
+                          This demo explores a VLA policy that combines a <strong>Qwen</strong>
+                          vision-language backbone with a <strong>flow-matching action head</strong>,
+                          connecting high-level semantic understanding with continuous robot control.
+                        </li>
+                        <li data-icon="🧪">
+                          We first validated the framework in LIBERO, achieving over
+                          <strong>90%</strong> success across all four suites and reaching
+                          <strong>97.6%</strong> on the Spatial suite.
+                        </li>
+                        <li data-icon="🤝">
+                          We further evaluated the same direction on real ALOHA hardware and compared
+                          it with the native JAX-format Pi0.5 model under extensive real-robot trials.
+                        </li>
+                        <li data-icon="🌈">
+                          Across same-category objects with unseen colors, novel distractors entering
+                          the robot camera view, and substantially different backgrounds, the
+                          Qwen + flow-matching VLA showed stronger cross-object and cross-background
+                          generalization.
+                        </li>
+                        <li data-icon="🚀">
+                          These results suggest that stronger semantic grounding and generative action
+                          modeling can improve the path from simulation benchmarks to robust
+                          real-world manipulation.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
               <button
@@ -430,7 +469,7 @@
                 ›
               </button>
               <div class="demo-carousel__counter" aria-live="polite" data-carousel-counter>
-                1 / 2
+                1 / 3
               </div>
             </div>
 
