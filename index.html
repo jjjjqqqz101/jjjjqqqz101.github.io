@@ -348,17 +348,31 @@
               <div class="video-caption">
                 <p><strong>FingerEye-Based Dexterous Manipulation Demo</strong></p>
                 <ul class="icon-list">
-                  <li data-icon="🖐️">
-                    Built on
-                    <strong>FingerEye: Learning Dexterous Manipulation with Continuous
-                    Vision-Tactile Sensing</strong>.
+                  <li data-icon="🧠">
+                    This work builds on Roboscience's <strong>FingerEye</strong> model, with our own
+                    algorithmic improvements for real-robot deployment.
+                  </li>
+                  <li data-icon="🔁">
+                    During post-training, we found that mixing successful model-inference data with
+                    human teleoperation data works better than training only on manually collected
+                    teleoperation data.
+                  </li>
+                  <li data-icon="🏗️">
+                    Based on this finding, we designed an automated architecture for collecting
+                    successful datasets from the model inference stage.
+                  </li>
+                  <li data-icon="⭐">
+                    We combine human scoring with scoring from the Qwen vision-language model,
+                    producing thousands of high-quality real-robot post-training samples.
                   </li>
                   <li data-icon="📈">
-                    Using our method, the success rate is improved to <strong>90%</strong> compared
-                    with the original paper's reported metric.
+                    Compared with training on pure human teleoperation data, the mixed-data setting
+                    improved real-robot inference success by nearly <strong>30%</strong>, validating
+                    our hypothesis.
                   </li>
-                  <li data-icon="🎬">
-                    The video shows the real-robot <strong>io_demo1</strong> execution result.
+                  <li data-icon="🚀">
+                    We are accelerating the write-up of this work and hope to share it on arXiv and
+                    at ICRA 2027 for discussion on stable and robust real-robot deployment.
                   </li>
                 </ul>
               </div>
