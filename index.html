@@ -458,6 +458,46 @@
                       </ul>
                     </div>
                   </div>
+
+                  <div class="video-showcase" data-carousel-slide>
+                    <div class="video-frame">
+                      <video controls playsinline preload="metadata" poster="assets/io-demo4-poster.png">
+                        <source src="assets/io-demo4.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="video-caption">
+                      <p><strong>SARF: Robust Fine-Tuning Against Physical Attention Hijacking</strong></p>
+                      <ul class="icon-list">
+                        <li data-icon="📄">
+                          This demo presents our IROS 2026 work,
+                          <strong>Structure-Aware Robust Fine-Tuning</strong>, for defending VLA
+                          robots against physical attention hijacking.
+                        </li>
+                        <li data-icon="🎯">
+                          We identify a mechanism-level vulnerability where printable adversarial
+                          patches divert policy-critical action-to-vision attention away from
+                          task-relevant regions.
+                        </li>
+                        <li data-icon="🧩">
+                          To stress-test this failure mode, AGSD jointly concentrates
+                          action-conditioned attention on the patch and disrupts vision-language
+                          semantic alignment under realistic transformations.
+                        </li>
+                        <li data-icon="🛡️">
+                          SARF fine-tunes only the visual encoder with feature anchoring,
+                          policy-critical attention correction, and language-guided geometric
+                          consistency, adding zero inference overhead at deployment.
+                        </li>
+                        <li data-icon="📈">
+                          On LIBERO, SARF reduces OpenVLA failure under AGSD from
+                          <strong>100%</strong> to <strong>17.0-56.8%</strong>, while real PiPER
+                          experiments improve average success from <strong>9.7%</strong> to
+                          <strong>61.7%</strong>.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
               <button
@@ -469,7 +509,7 @@
                 ›
               </button>
               <div class="demo-carousel__counter" aria-live="polite" data-carousel-counter>
-                1 / 3
+                1 / 4
               </div>
             </div>
 
