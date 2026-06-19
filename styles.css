@@ -346,6 +346,41 @@ strong {
   margin-bottom: 0;
 }
 
+.video-showcase {
+  padding: 1em 0 1.8em;
+  border-bottom: 1px solid #efefef;
+}
+
+.video-frame {
+  overflow: hidden;
+  width: 100%;
+  max-width: 760px;
+  background: #000000;
+  border-radius: 6px;
+  box-shadow: 3px 3px 6px #888;
+}
+
+.video-frame video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+}
+
+.video-caption {
+  max-width: 760px;
+  margin-top: 0.9em;
+}
+
+.video-caption p:first-child {
+  margin-bottom: 0.35em;
+  font-size: 1.03em;
+}
+
+.video-caption ul {
+  margin-bottom: 0;
+}
+
 .badge {
   position: absolute;
   z-index: 1;
