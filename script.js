@@ -9,6 +9,7 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
   const slides = Array.from(carousel.querySelectorAll("[data-carousel-slide]"));
   const prevButton = carousel.querySelector("[data-carousel-prev]");
   const nextButton = carousel.querySelector("[data-carousel-next]");
+  const counter = carousel.querySelector("[data-carousel-counter]");
   let activeIndex = 0;
 
   const updateCarousel = () => {
@@ -17,6 +18,10 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
     }
 
     track.style.transform = `translateX(-${activeIndex * 100}%)`;
+    if (counter) {
+      counter.textContent = `${activeIndex + 1} / ${slides.length}`;
+    }
+
     slides.forEach((slide, index) => {
       slide.toggleAttribute("aria-hidden", index !== activeIndex);
       if (index !== activeIndex) {
