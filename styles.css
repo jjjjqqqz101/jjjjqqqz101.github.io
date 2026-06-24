@@ -353,7 +353,8 @@ strong {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.9rem;
-  margin: 0.95em 0 2.1em;
+  width: min(100%, 720px);
+  margin: 0.95em auto 2.1em;
 }
 
 .patent-certificate-card {
@@ -628,6 +629,7 @@ strong {
 
   .patent-certificate-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 520px);
   }
 }
 
@@ -690,5 +692,6 @@ strong {
 
   .patent-certificate-gallery {
     grid-template-columns: 1fr;
+    width: min(100%, 280px);
   }
 }
