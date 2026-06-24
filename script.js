@@ -116,6 +116,11 @@ const translationEntries = [
     zh: '<em>2026.05</em>：我的发明专利 <strong>一种基于视觉语言动作模型的机器人控制方法、系统、终端及存储介质</strong> 已授权。专利号：ZL 2026 1 0219615.6。',
   },
   {
+    selector: "#news + h1 + ul > li",
+    index: 4,
+    zh: '<em>2026.05</em>：我的发明专利 <strong>一种基于视觉语言模型的机器人操作方法、系统及终端</strong> 已授权。专利号：ZL 2026 1 0200293.0。',
+  },
+  {
     selector: "#achievements + h1 + h2 + ul > li",
     index: 0,
     zh: '<strong>结构感知鲁棒微调：防御视觉-语言-动作机器人中的物理注意力劫持</strong>。被 IROS 2026 接收。',
@@ -138,17 +143,17 @@ const translationEntries = [
   {
     selector: "#achievements + h1 + h2 + ul + h2 + ul > li",
     index: 2,
-    zh: '<strong>一种约束驱动轨迹生成方法、系统、终端及存储介质</strong>。状态：实质审查中。',
+    zh: '<strong>一种基于视觉语言模型的机器人操作方法、系统及终端</strong>。已授权。专利号：ZL 2026 1 0200293.0。',
   },
   {
     selector: "#achievements + h1 + h2 + ul + h2 + ul > li",
     index: 3,
-    zh: '<strong>一种柔性压力传感器及其制备方法</strong>。状态：实质审查中。',
+    zh: '<strong>一种约束驱动轨迹生成方法、系统、终端及存储介质</strong>。状态：实质审查中。',
   },
   {
     selector: "#achievements + h1 + h2 + ul + h2 + ul > li",
     index: 4,
-    zh: '<strong>一种基于视觉语言模型的机器人操作方法、系统及终端</strong>。状态：实质审查中。',
+    zh: '<strong>一种柔性压力传感器及其制备方法</strong>。状态：实质审查中。',
   },
   {
     selector: "#achievements + h1 + h2 + ul + h2 + ul > li",
