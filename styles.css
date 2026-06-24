@@ -406,6 +406,22 @@ strong {
   outline: none;
 }
 
+.patent-certificate-carousel__counter {
+  grid-column: 2;
+  justify-self: center;
+  min-width: 3.8rem;
+  margin-top: -0.45rem;
+  padding: 0.25rem 0.65rem;
+  color: #6a737b;
+  background: #f7f8f9;
+  border: 1px solid #e2e5e8;
+  border-radius: 999px;
+  font-size: 0.82em;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .patent-certificate-card {
   position: absolute;
   top: 50%;

@@ -44,6 +44,7 @@ document.querySelectorAll("[data-certificate-carousel]").forEach((carousel) => {
   const slides = Array.from(carousel.querySelectorAll("[data-certificate-slide]"));
   const prevButton = carousel.querySelector("[data-certificate-prev]");
   const nextButton = carousel.querySelector("[data-certificate-next]");
+  const counter = carousel.querySelector("[data-certificate-counter]");
   let activeIndex = Number(carousel.dataset.certificateActive || 0);
 
   const normalizeIndex = (index) => (index + slides.length) % slides.length;
@@ -63,6 +64,10 @@ document.querySelectorAll("[data-certificate-carousel]").forEach((carousel) => {
       slide.classList.toggle("is-right", index === rightIndex);
       slide.toggleAttribute("aria-hidden", ![leftIndex, activeIndex, rightIndex].includes(index));
     });
+
+    if (counter) {
+      counter.textContent = `${activeIndex + 1} / ${slides.length}`;
+    }
   };
 
   const moveCertificateCarousel = (direction) => {
