@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#ffffff" />
     <title>Zhang Jinquan(张锦权) - Homepage</title>
     <link rel="canonical" href="https://jjjjqqqz101.github.io/" />
-    <link rel="stylesheet" href="styles.css?v=20260624-job-notice" />
+    <link rel="stylesheet" href="styles.css?v=20260624-patent-carousel" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -235,37 +235,60 @@
                 Status: under preliminary examination.
               </li>
             </ul>
-            <div class="patent-certificate-gallery" aria-label="Granted patent certificates">
-              <figure class="patent-certificate-card">
-                <a href="assets/patent-certificate-2.png" target="_blank" rel="noopener">
-                  <img
-                    src="assets/patent-certificate-2.png"
-                    alt="Patent certificate for ZL 2026 1 0211734.7"
-                    loading="lazy"
-                  />
-                </a>
-                <figcaption>Certificate - ZL 2026 1 0211734.7</figcaption>
-              </figure>
-              <figure class="patent-certificate-card">
-                <a href="assets/patent-certificate-1.png" target="_blank" rel="noopener">
-                  <img
-                    src="assets/patent-certificate-1.png"
-                    alt="Patent certificate for ZL 2026 1 0219615.6"
-                    loading="lazy"
-                  />
-                </a>
-                <figcaption>Certificate - ZL 2026 1 0219615.6</figcaption>
-              </figure>
-              <figure class="patent-certificate-card">
-                <a href="assets/patent-certificate-3.png" target="_blank" rel="noopener">
-                  <img
-                    src="assets/patent-certificate-3.png"
-                    alt="Patent certificate for ZL 2026 1 0200293.0"
-                    loading="lazy"
-                  />
-                </a>
-                <figcaption>Certificate - ZL 2026 1 0200293.0</figcaption>
-              </figure>
+            <div
+              class="patent-certificate-gallery patent-certificate-carousel"
+              data-certificate-carousel
+              data-certificate-active="1"
+              aria-label="Granted patent certificates"
+            >
+              <button
+                class="patent-certificate-carousel__button"
+                type="button"
+                aria-label="Previous patent certificate"
+                data-certificate-prev
+              >
+                ‹
+              </button>
+              <div class="patent-certificate-carousel__stage" data-certificate-stage>
+                <figure class="patent-certificate-card is-left" data-certificate-slide>
+                  <a href="assets/patent-certificate-2.png" target="_blank" rel="noopener">
+                    <img
+                      src="assets/patent-certificate-2.png"
+                      alt="Patent certificate for ZL 2026 1 0211734.7"
+                      loading="lazy"
+                    />
+                  </a>
+                  <figcaption>Certificate - ZL 2026 1 0211734.7</figcaption>
+                </figure>
+                <figure class="patent-certificate-card is-center" data-certificate-slide>
+                  <a href="assets/patent-certificate-1.png" target="_blank" rel="noopener">
+                    <img
+                      src="assets/patent-certificate-1.png"
+                      alt="Patent certificate for ZL 2026 1 0219615.6"
+                      loading="lazy"
+                    />
+                  </a>
+                  <figcaption>Certificate - ZL 2026 1 0219615.6</figcaption>
+                </figure>
+                <figure class="patent-certificate-card is-right" data-certificate-slide>
+                  <a href="assets/patent-certificate-3.png" target="_blank" rel="noopener">
+                    <img
+                      src="assets/patent-certificate-3.png"
+                      alt="Patent certificate for ZL 2026 1 0200293.0"
+                      loading="lazy"
+                    />
+                  </a>
+                  <figcaption>Certificate - ZL 2026 1 0200293.0</figcaption>
+                </figure>
+              </div>
+              <button
+                class="patent-certificate-carousel__button"
+                type="button"
+                aria-label="Next patent certificate"
+                data-certificate-next
+              >
+                ›
+              </button>
             </div>
 
             <span class="anchor" id="selected-publications"></span>
@@ -598,6 +621,6 @@
       <span>© <span id="year"></span> Zhang Jinquan(张锦权)</span>
     </footer>
 
-    <script src="script.js?v=20260624-job-notice"></script>
+    <script src="script.js?v=20260624-patent-carousel"></script>
   </body>
 </html>

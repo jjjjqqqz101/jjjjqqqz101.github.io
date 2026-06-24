@@ -40,6 +40,52 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
   updateCarousel();
 });
 
+document.querySelectorAll("[data-certificate-carousel]").forEach((carousel) => {
+  const slides = Array.from(carousel.querySelectorAll("[data-certificate-slide]"));
+  const prevButton = carousel.querySelector("[data-certificate-prev]");
+  const nextButton = carousel.querySelector("[data-certificate-next]");
+  let activeIndex = Number(carousel.dataset.certificateActive || 0);
+
+  const normalizeIndex = (index) => (index + slides.length) % slides.length;
+
+  const updateCertificateCarousel = () => {
+    if (slides.length === 0) {
+      return;
+    }
+
+    activeIndex = normalizeIndex(activeIndex);
+    const leftIndex = normalizeIndex(activeIndex - 1);
+    const rightIndex = normalizeIndex(activeIndex + 1);
+
+    slides.forEach((slide, index) => {
+      slide.classList.toggle("is-left", index === leftIndex);
+      slide.classList.toggle("is-center", index === activeIndex);
+      slide.classList.toggle("is-right", index === rightIndex);
+      slide.toggleAttribute("aria-hidden", ![leftIndex, activeIndex, rightIndex].includes(index));
+    });
+  };
+
+  const moveCertificateCarousel = (direction) => {
+    activeIndex = normalizeIndex(activeIndex + direction);
+    updateCertificateCarousel();
+  };
+
+  prevButton?.addEventListener("click", () => moveCertificateCarousel(-1));
+  nextButton?.addEventListener("click", () => moveCertificateCarousel(1));
+  carousel.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      moveCertificateCarousel(-1);
+    }
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      moveCertificateCarousel(1);
+    }
+  });
+
+  updateCertificateCarousel();
+});
+
 const translationEntries = [
   { selector: ".skip-link", zh: "跳转到正文" },
   { selector: ".greedy-nav .masthead__menu-item", index: 0, zh: "主页" },
@@ -233,6 +279,8 @@ const attributeTranslationEntries = [
   { selector: ".patent-certificate-card img", index: 0, attribute: "alt", zh: "ZL 2026 1 0211734.7 专利证书" },
   { selector: ".patent-certificate-card img", index: 1, attribute: "alt", zh: "ZL 2026 1 0219615.6 专利证书" },
   { selector: ".patent-certificate-card img", index: 2, attribute: "alt", zh: "ZL 2026 1 0200293.0 专利证书" },
+  { selector: "[data-certificate-prev]", attribute: "aria-label", zh: "上一张专利证书" },
+  { selector: "[data-certificate-next]", attribute: "aria-label", zh: "下一张专利证书" },
   { selector: "[data-carousel-prev]", attribute: "aria-label", zh: "上一个演示" },
   { selector: "[data-carousel-next]", attribute: "aria-label", zh: "下一个演示" },
 ];
