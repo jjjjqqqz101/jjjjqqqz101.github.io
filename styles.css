@@ -81,8 +81,26 @@ strong {
 }
 
 .job-notice {
-  color: #d00000;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  margin: 1.15em 0 1.75em;
+  padding: 1.05rem 1.25rem;
+  border-left: 7px solid #f4be3a;
+  border-radius: 7px;
+  color: #22262c;
+  background: #fff3cf;
+  font-size: 1.08em;
   font-weight: 700;
+  line-height: 1.65;
+}
+
+.job-notice__icon {
+  color: #f4b425;
+  font-size: 1.08em;
+  line-height: 1.65;
+  white-space: nowrap;
 }
 
 .skip-link {

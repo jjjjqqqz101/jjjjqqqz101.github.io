@@ -93,7 +93,7 @@ const translationEntries = [
   },
   {
     selector: ".job-notice",
-    zh: "📢📢 我希望加入一个充满活力且目标明确的机器人团队。如果您感兴趣，请通过 2410815010@mails.szu.edu.cn 联系我。",
+    zh: '<span class="job-notice__icon" aria-hidden="true">📢📢</span><span>我希望加入一个充满活力且目标明确的机器人团队。如果您感兴趣，请通过 2410815010@mails.szu.edu.cn 联系我。</span>',
   },
   {
     selector: "#news + h1 + ul > li",
