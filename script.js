@@ -161,6 +161,21 @@ const translationEntries = [
     zh: '<strong>一种基于未来潜在表征一致性约束的视觉语言动作模型鲁棒训练方法</strong>。状态：初审中。',
   },
   {
+    selector: ".patent-certificate-card figcaption",
+    index: 0,
+    zh: "专利证书 - ZL 2026 1 0211734.7",
+  },
+  {
+    selector: ".patent-certificate-card figcaption",
+    index: 1,
+    zh: "专利证书 - ZL 2026 1 0219615.6",
+  },
+  {
+    selector: ".patent-certificate-card figcaption",
+    index: 2,
+    zh: "专利证书 - ZL 2026 1 0200293.0",
+  },
+  {
     selector: ".paper-box-text",
     index: 0,
     zh: '<p><strong>结构感知鲁棒微调：防御视觉-语言-动作机器人中的物理注意力劫持</strong></p><p><strong>张锦权(Zhang Jinquan)</strong> 等</p><ul class="icon-list paper-points"><li data-icon="🔎">揭示 policy-critical action-to-vision attention hijacking 机制，即物理对抗补丁会将动作条件注意力从任务相关区域转移到局部补丁。</li><li data-icon="🧩">提出 AGSD，一种基于 EOT 优化的可打印补丁，同时劫持策略关键注意力并破坏视觉-语言语义对齐。</li><li data-icon="🛡️">提出 SARF，一种零推理额外开销的防御方法，仅微调视觉编码器，并结合特征锚定、注意力校正和语言引导的几何一致性。</li><li data-icon="📈">在 LIBERO adaptive AGSD 下，将 OpenVLA 平均失败率从 100.0% 降至 28.6%；在真实 PiPER 上将 AGSD 下平均成功率从 9.7% 恢复到 61.7%。</li></ul>',
@@ -214,6 +229,10 @@ const attributeTranslationEntries = [
   { selector: "nav.greedy-nav", attribute: "aria-label", zh: "主导航" },
   { selector: ".sidebar", attribute: "aria-label", zh: "个人简介" },
   { selector: ".language-switcher__controls", attribute: "aria-label", zh: "语言切换" },
+  { selector: ".patent-certificate-gallery", attribute: "aria-label", zh: "已授权专利证书" },
+  { selector: ".patent-certificate-card img", index: 0, attribute: "alt", zh: "ZL 2026 1 0211734.7 专利证书" },
+  { selector: ".patent-certificate-card img", index: 1, attribute: "alt", zh: "ZL 2026 1 0219615.6 专利证书" },
+  { selector: ".patent-certificate-card img", index: 2, attribute: "alt", zh: "ZL 2026 1 0200293.0 专利证书" },
   { selector: "[data-carousel-prev]", attribute: "aria-label", zh: "上一个演示" },
   { selector: "[data-carousel-next]", attribute: "aria-label", zh: "下一个演示" },
 ];
